@@ -36,6 +36,12 @@ This skill includes an embedded evaluation suite to verify its diagnostic capabi
    > "I have a pod stuck in Pending in the 'troubleshoot-eval' namespace. Can you find out why and tell me how to fix it?"
 3. **Verify**: Gemini should use the skill's logic to identify the resource exhaustion and suggest a fix.
 
+#### Benchmark Results
+A standard benchmark was performed comparing Gemini CLI's performance with and without this skill across 3 diagnostic scenarios (Pending, CrashLoop, ImagePull).
+- **Reference Usage**: 100% (The skill-enabled agent cited specific diagnostic guides for every issue).
+- **Diagnostic Depth**: Significantly higher with the skill, providing architectural context instead of just symptomatic fixes.
+See [benchmark_results.md](k8s-troubleshooter/eval/benchmark_results.md) for full details.
+
 ---
 
 ## Contributing
