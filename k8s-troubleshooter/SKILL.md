@@ -53,3 +53,4 @@ Check exit codes in `kubectl describe pod`:
 
 - **scripts/install_tools.sh**: Automated installer for kubectl, stern, and k9s.
 - **references/**: Detailed troubleshooting guides for different K8s domains.
+- **eval/EVAL.md**: Instructions for running automated diagnostic evaluations of this skill.
